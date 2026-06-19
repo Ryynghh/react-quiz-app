@@ -1,18 +1,39 @@
-# React + Vite
+# 🎯 React Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sebuah aplikasi kuis interaktif berbasis *Single Page Application* (SPA) yang dibangun menggunakan React dan Vite. Aplikasi ini mengambil soal secara dinamis dari Open Trivia Database (OpenTDB) dan dirancang dengan antarmuka modern menggunakan Tailwind CSS.
 
-Currently, two official plugins are available:
+## ✨ Fitur Utama
+- **Sistem Login Sederhana:** Memasukkan nama pengguna sebelum memulai kuis.
+- **Soal Dinamis:** Integrasi API langsung dengan [OpenTDB](https://opentdb.com/).
+- **Timer Hitung Mundur:** Batas waktu pengerjaan (5 menit) yang akan menutup kuis secara otomatis ketika waktu habis.
+- **Auto-Save Progress:** Menggunakan `localStorage` browser sehingga jika tab tertutup secara tidak sengaja, kuis dapat dilanjutkan dari soal dan sisa waktu terakhir.
+- **Statistik Hasil Akhir:** Menampilkan rincian soal yang berhasil dijawab, jumlah benar, salah, dan sisa waktu pengerjaan.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Teknologi yang Digunakan
+- **Frontend Framework:** React (dengan Vite)
+- **Styling:** Tailwind CSS v4
+- **API:** Fetch API (JavaScript bawaan)
+- **State Management:** React Hooks (`useState`, `useEffect`)
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 Cara Menjalankan Project di Localhost
 
-Note: This will impact Vite dev & build performances.
+Ikuti langkah-langkah di bawah ini untuk melakukan *clone* dan menjalankan aplikasi ini di komputer lokal:
 
-## Expanding the ESLint configuration
+### 1. Prasyarat
+Pastikan komputer kamu sudah terinstal **Node.js** (direkomendasikan versi LTS). Kamu bisa mengeceknya dengan menjalankan perintah ini di terminal:
+```bash
+node -v
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Clone Repository
+git clone [https://github.com/Ryynghh/react-quiz-app](https://github.com/Ryynghh/react-quiz-app)
+
+### 3. Masuk ke Direktori Project
+cd react-quiz-app
+
+### 4. Install Dependencies
+npm install
+
+### 5. Jalankan Local Server
+npm run dev
